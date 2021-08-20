@@ -1,0 +1,205 @@
+
+
+.container{
+    width: 95%;
+    margin: auto;
+    max-width: 1240px;
+
+}
+
+.card{
+    /* min-width: 20rem; */
+    padding: 2rem 3rem;
+
+    background-color: var(--card-bg-color);
+    border-radius: 5px;
+}
+
+.card svg{
+    transform: scale(0.8);
+}
+
+.card__stats-change{
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+
+/* Header start */
+.header{
+    width: 100%;
+    padding: 2rem 0rem 0rem;
+    background-color: var(--top-bg-pattern-color);
+
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__text h2{
+    color: var(--text-color);
+}
+
+.header__text span{
+    color: var(--small-text-color);
+    /* font-size: 1.4rem; */
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.theme-switcher{
+    display: flex;
+    align-items: center;
+}
+
+.theme-switcher .theme-name{
+    font-size: 1.4rem;
+    color: var(--small-text-color);
+    font-weight: 700;
+}
+
+.theme-switcher .theme-toggler{
+    margin-left: 10px;
+    --height: 2.3rem;
+    --width: 4.5rem;
+    display: inline-block;
+    width: var(--width);
+    height: var(--height);
+    background: var(--Toggle-bg-color);
+
+    border-radius: 50px;
+    position: relative;
+
+
+}
+.theme-switcher .ball{
+    display: inline-block;
+    --size: calc(var(--height) * 0.8);
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--top-bg-pattern-color);
+    border-radius: inherit;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(15%, -50%);
+}
+
+
+
+/* Header Cards start */
+.header__cards-container{
+    width: 100%;
+    height: 10rem;
+    margin: 0rem 0rem 0rem;
+
+    display: flex;
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: stretch;
+    transform: translate(0px, 20%);
+
+    
+
+}
+
+.header__card{
+    text-align: center;
+    margin: 1px;
+    position: relative;
+    justify-self: stretch;
+}
+.header__card::before{
+    content: "";
+    height: 3px;
+    width: 100%;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.header__card--facebook::before{
+    background-color: var(--Facebook);
+}
+.header__card--twitter::before{
+    background-color: var(--Twitter);
+}
+.header__card--instagram::before{
+    background: var(--Instagram);
+}
+.header__card--youtube::before{
+    background-color: var(--YouTube);
+}
+
+.header__card__social-media{
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--small-text-color);
+    font-size: 1rem;
+}
+.header__card__social-media svg{
+    margin-right: 0.2rem;
+    transform: scale(0.8);
+}
+.header__card__social-media span{
+    margin-left: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.header__card__number{
+    font-size: 4rem;
+}
+.header__card__followers{
+    color: var(--small-text-color);
+    opacity: 0.8;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    margin-top: -0.5rem;
+
+}
+
+.header__card__today{
+    margin-top: 2rem;
+    
+    color: var(--Lime-Green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+}
+.header__card__today svg{
+    margin-right: 0.5rem;
+}
+.header__card__today span{
+    color: var(--Lime-Green);
+    font-size: 0.9rem;
+    font-weight: 700;
+
+}
+
+/* Header Carsdd end */
+/* Header end */
+
+
+/* Main start */
+.main{
+    width: 100%;
+    padding-top: 10rem;
+}
+/* Main end */
